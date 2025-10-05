@@ -1,0 +1,26 @@
+.image {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.frame {
+  background: #fff;
+  padding: 2px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+.img {
+  display: block;
+  width: 90px;
+  height: auto;
+}
+
+.title {
+  font-style: italic;
+  color: black;
+  text-align: center;
+}

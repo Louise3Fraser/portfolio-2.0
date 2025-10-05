@@ -4,12 +4,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #111117;
+  background-color: #f4f4f4;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0px;
 }
 
 h1 {
@@ -38,6 +42,16 @@ h3 {
   margin: 0px;
   font-weight: 700;
   color: white;
+}
+
+h4 {
+  font-family: "Newsreader", serif;
+  margin: 0px;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #afafb2;
+  font-style: italic;
 }
 
 p {
