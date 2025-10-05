@@ -22,6 +22,7 @@ function Status() {
       window.removeEventListener("offline", handleOffline);
     };
   }, []);
+
   return (
     <div className="container status">
       <div className="flex-h">
