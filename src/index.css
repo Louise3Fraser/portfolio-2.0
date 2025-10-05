@@ -1,0 +1,48 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #111117;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: "Newsreader", serif;
+  font-size: 26px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+  text-align: start;
+}
+
+h2 {
+  font-family: "Newsreader", serif;
+  margin: 0px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #afafb2;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  font-weight: 700;
+  color: white;
+}
+
+p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  margin-top: 5px;
+  color: #bababc;
+}

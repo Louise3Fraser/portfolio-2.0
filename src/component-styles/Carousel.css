@@ -1,0 +1,34 @@
+.marquee {
+  max-width: 320px;
+  height: 65px;
+  overflow: hidden;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  gap: 6px;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee__set {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.ticker-img {
+  height: 65px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 2px;
+  display: block;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

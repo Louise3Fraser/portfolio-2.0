@@ -1,0 +1,12 @@
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  gap: 40px;
+}
+
+.row-date {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}

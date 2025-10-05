@@ -1,0 +1,137 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-h {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2px;
+}
+
+body {
+  margin: 0px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+.status-dot.online {
+  background: #4fc853;
+  box-shadow: 0 0 5px 1px rgba(0, 198, 84, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.92);
+    box-shadow: 0 0 0 0 rgba(0, 198, 84, 0.55);
+  }
+  60% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 6px rgba(0, 198, 84, 0);
+  }
+  100% {
+    transform: scale(0.92);
+    box-shadow: 0 0 0 0 rgba(0, 198, 84, 0);
+  }
+}
+
+.grey {
+  color: #afafb2;
+}
+
+.ovo {
+  font-family: "Ovo", serif;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 16px;
+  width: 730px;
+  height: 300px;
+}
+
+.box {
+  background-color: rgba(236, 236, 236, 0.06);
+  border: 1px solid #333338;
+  border-radius: 4px;
+  /* padding: 10px; */
+}
+
+.left {
+  display: grid;
+  gap: 16px;
+}
+
+.port {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4x;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow: hidden;
+}
+
+.status {
+  height: auto;
+}
+
+.about {
+  height: 170px;
+}
+
+.container-true::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 50px;
+  border-radius: 4px;
+  background: linear-gradient(to top, #111117, transparent);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.title {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.scroll-v {
+  height: 100%;
+  overflow-y: auto;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-v::-webkit-scrollbar {
+  display: none;
+}
+
+.line {
+  height: 0.5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
