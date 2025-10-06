@@ -1,9 +1,12 @@
 .main {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+}
+
+.canvas {
+  height: 100%;
+  position: relative;
 }
 
 .grid-fade {
@@ -11,10 +14,10 @@
   overflow: hidden;
 }
 
-.grid-fade::before {
-  --size: 15px;
-  --line: rgba(0, 0, 0, 0.02);
-  --fade-start: 70%;
+/* .grid-fade::before {
+  --size: 20px;
+  --line: rgba(0, 0, 0, 0.03);
+  --fade-start: 80%;
   --fade-end: 100%;
 
   content: "";
@@ -37,6 +40,29 @@
     rgba(0, 0, 0, 1) var(--fade-start),
     rgba(0, 0, 0, 0) var(--fade-end)
   );
+
+  transition: mask-image 0.2s ease;
+} */
+
+.grid-fade::before {
+  --spacing: 15px; /* distance between dots */
+  --dot-size: 1.25px; /* dot radius */
+  --dot: rgba(0, 0, 0, 0.06); /* dot color */
+  --fade-start: 80%;
+  --fade-end: 100%;
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  /* a single dot tiled across the surface */
+  background: radial-gradient(
+      circle at 1px 1px,
+      var(--dot) var(--dot-size),
+      transparent calc(var(--dot-size) + 0.01px)
+    )
+    0 0 / var(--spacing) var(--spacing);
 
   transition: mask-image 0.2s ease;
 }

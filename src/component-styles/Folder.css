@@ -7,18 +7,17 @@
 
 .folder-img {
   display: block;
-  width: 85px;
+  width: 95px;
   height: auto;
-  filter: drop-shadow(0 1px 0.5px rgba(0, 0, 0, 0.25))
-    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 1px 0.5px rgba(0, 0, 0, 0.15))
+    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
   transition: filter 0.25s ease, transform 0.25s ease;
   will-change: filter, transform;
 }
 
 .folder-img.dragging {
-  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.25))
-    drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
-  transform: scale(1.03);
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.15))
+    drop-shadow(0 4px 5px rgba(0, 0, 0, 0.25));
 }
 
 .frame {
@@ -28,14 +27,6 @@
   display: inline-block;
 }
 
-.img {
-  display: block;
-  width: 90px;
-  height: auto;
-}
-
 .title {
-  font-style: italic;
-  color: black;
   text-align: center;
 }

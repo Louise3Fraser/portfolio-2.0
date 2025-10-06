@@ -3,12 +3,14 @@ export const folders = [
     id: 1,
     title: "Fun facts",
     alt: "fun facts about Louise",
-    position: { x: 120, y: 150 },
+    category: "misc",
+    position: { x: 30, y: 40 },
   },
   {
     id: 2,
     title: "Fun facts",
     alt: "fun facts about Louise",
-    position: { x: 200, y: 80 },
+    category: "misc",
+    position: { x: 80, y: 10 },
   },
 ];
