@@ -14,8 +14,8 @@
   overflow: hidden;
 }
 
-/* .grid-fade::before {
-  --size: 20px;
+.grid-fade::before {
+  --size: 27px;
   --line: rgba(0, 0, 0, 0.03);
   --fade-start: 80%;
   --fade-end: 100%;
@@ -29,40 +29,6 @@
       var(--size) var(--size),
     linear-gradient(to bottom, var(--line) 1px, transparent 1px) 0 0 /
       var(--size) var(--size);
-
-  -webkit-mask-image: radial-gradient(
-    closest-side,
-    rgba(0, 0, 0, 1) var(--fade-start),
-    rgba(0, 0, 0, 0) var(--fade-end)
-  );
-  mask-image: radial-gradient(
-    closest-side,
-    rgba(0, 0, 0, 1) var(--fade-start),
-    rgba(0, 0, 0, 0) var(--fade-end)
-  );
-
-  transition: mask-image 0.2s ease;
-} */
-
-.grid-fade::before {
-  --spacing: 15px; /* distance between dots */
-  --dot-size: 1.25px; /* dot radius */
-  --dot: rgba(0, 0, 0, 0.06); /* dot color */
-  --fade-start: 80%;
-  --fade-end: 100%;
-
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-
-  /* a single dot tiled across the surface */
-  background: radial-gradient(
-      circle at 1px 1px,
-      var(--dot) var(--dot-size),
-      transparent calc(var(--dot-size) + 0.01px)
-    )
-    0 0 / var(--spacing) var(--spacing);
 
   transition: mask-image 0.2s ease;
 }
