@@ -2,9 +2,14 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color-scheme: light dark;
+<<<<<<< HEAD
   color: rgb(255, 255, 255);
   background-color: #fefffc;
 
+=======
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #f4f4f4;
+>>>>>>> e9ae78bf2a28959c9f7ba17b1ba89cbe07146c9b
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
