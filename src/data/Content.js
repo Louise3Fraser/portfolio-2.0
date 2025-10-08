@@ -31,7 +31,7 @@ export const content = [
     alt: "charcoal portrait of man",
     category: "art",
     position: { x: 36, y: 42 },
-    width: "110px",
+    width: "90px",
     bg: true,
   },
   {
